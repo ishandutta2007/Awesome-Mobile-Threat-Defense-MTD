@@ -1,35 +1,56 @@
-# Awesome Mobile Threat Defense (MTD) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Mobile Threat Defense (MTD) Banner" width="100%">
+</p>
 
-> A curated list of leading Mobile Threat Defense (MTD) platforms, mobile endpoint detection and response (EDR), and open-source mobile security frameworks.
+# Awesome Mobile Threat Defense (MTD) 📱🛡️
 
-Mobile Threat Defense (MTD) solutions protect iOS, iPadOS, Android, and ChromeOS devices from advanced mobile security risks spanning four primary attack vectors: **device vulnerabilities** (jailbreak/rooting, OS exploits, configuration drift), **network threats** (man-in-the-middle attacks, SSL stripping, malicious Wi-Fi, rogue cellular base stations), **application risks** (spyware, malware, aggressive trackers, leaky permissions), and **phishing & content threats** (SMS smishing, QR-code phishing, malicious URLs across messaging and email).
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg" alt="Maintained" />
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 **A curated directory of leading Mobile Threat Defense (MTD) platforms, Mobile Endpoint Detection and Response (EDR), and open-source mobile security frameworks.**
+
+Mobile Threat Defense (MTD) solutions defend iOS, iPadOS, Android, and ChromeOS devices against sophisticated mobile attacks across four primary vectors:
+* 📱 **Device Compromise:** Jailbreak/rooting detection, kernel/OS exploit shielding, firmware tampering, and configuration drift.
+* 🌐 **Network Threats:** Man-in-the-middle (MITM) attacks, SSL/TLS stripping, malicious Wi-Fi hotspots, ARP poisoning, and rogue cellular towers.
+* 📦 **Application Risks:** Malicious APKs/IPAs, spyware, stalkerware, excessive permission abuse, and aggressive advertising trackers.
+* 🎣 **Phishing & Content Attacks:** SMS smishing, QR-code phishing (quishing), weaponized messaging links (WhatsApp, Telegram), and malicious web domains.
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📑 Table of Contents
 
-The global Mobile Threat Defense (MTD) market is estimated at approximately **$4.0 billion to $4.9 billion in 2025–2026**, expanding rapidly at a compound annual growth rate (CAGR) of **15% to 24%** driven by enterprise Bring-Your-Own-Device (BYOD) adoption, hybrid remote workforces, and the surge in AI-orchestrated mobile smishing and zero-day app vulnerabilities. The sector is **moderately concentrated**: established cybersecurity and infrastructure titans control roughly 60% of enterprise market share through tight integrations with Unified Endpoint Management (UEM/MDM) and XDR platforms, while specialized pure-play vendors and on-device behavioral ML engines command the remainder of high-assurance deployments.
-
----
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Enterprise MTD Platforms](#saas--enterprise-mtd-platforms)
-- [Open-Source Mobile Security Projects](#open-source-mobile-security-projects)
-- [Enterprise vs Open-Source Comparison](#enterprise-vs-open-source-comparison)
-- [How to Contribute](#how-to-contribute)
-- [License & Disclaimer](#license--disclaimer)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Enterprise MTD Platforms](#-saas--enterprise-mtd-platforms)
+- [🔓 Open-Source Mobile Security Projects](#-open-source-mobile-security-projects)
+- [⚖️ Enterprise vs Open-Source Comparison](#️-enterprise-vs-open-source-comparison)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📜 License & Disclaimer](#-license--disclaimer)
 
 ---
 
-## SaaS & Enterprise MTD Platforms
+## 📊 Sector Overview & Market Dynamics
+
+The global Mobile Threat Defense (MTD) market is estimated at approximately **$4.0 billion to $4.9 billion in 2025–2026**, expanding rapidly at a compound annual growth rate (CAGR) of **15% to 24%** 📈. Growth is driven by enterprise Bring-Your-Own-Device (BYOD) adoption, hybrid workforces, and the proliferation of AI-orchestrated mobile smishing and zero-day app vulnerabilities. 
+
+The sector is **moderately concentrated** 🎯: established cybersecurity and infrastructure giants control roughly 60% of enterprise market share through tight integrations with Unified Endpoint Management (UEM/MDM) and Extended Detection and Response (XDR) platforms, while specialized pure-play vendors and on-device behavioral ML engines command the remainder of high-assurance deployments.
+
+---
+
+## 🏢 SaaS & Enterprise MTD Platforms
 
 The following enterprise platforms provide comprehensive Mobile Threat Defense (MTD) capabilities, including on-device real-time behavioral protection, MDM/UEM conditional access integration, fleet-wide risk dashboards, and automated incident remediation.
 
 *Table is sorted descending by Company Size (Market Capitalization / Valuation / Revenue).*
 
-| Platform | Company Size (Market Cap / Valuation / Revenue) | Starting Pricing (Specific Tier) | Free Tier / Trial Limit | Key MTD Capabilities & Target Fleet |
+| Platform | Company Size (Market Cap / Valuation / Revenue) 🏢 | Starting Pricing (Specific Tier) 💳 | Free Tier / Trial Limit ⏳ | Key MTD Capabilities & Target Fleet 🛡️ |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Microsoft Defender for Mobile](https://learn.microsoft.com/defender-endpoint/mtd)** | ~$3.1T Market Cap (Microsoft) | $3.00 / user / month (Defender for Endpoint Plan 1 or Defender for Business) | 90-day free trial (Full enterprise feature evaluation via Microsoft 365 Admin Center) | Web protection, anti-phishing, jailbreak/root detection, network protection, vulnerability management, and Intune Conditional Access gating. |
 | **[Symantec Endpoint Protection Mobile](https://www.broadcom.com/)** | ~$1.55T Market Cap (Broadcom) | $50.00 / device / year (~$4.17/mo, SEP Mobile 1-year standalone subscription list tier) | 30-day proof-of-concept trial via Broadcom Enterprise authorized reseller or direct sales | On-device network protection against Wi-Fi MITM, app analysis, vulnerability shielding, and enterprise SIEM/UEM bidirectional connectors. |
@@ -44,13 +65,13 @@ The following enterprise platforms provide comprehensive Mobile Threat Defense (
 
 ---
 
-## Open-Source Mobile Security Projects
+## 🔓 Open-Source Mobile Security Projects
 
 Open-source tooling in mobile security excels at forensic analysis, static/dynamic APK/IPA security auditing, network telemetry inspection, and local consumer malware scanning. 
 
 *Table is sorted descending by GitHub Star Count.*
 
-| Project | Stars | Focus Area | Platform | Description & Architecture |
+| Project | Stars ⭐ | Focus Area 🎯 | Platform 📱 | Description & Architecture 🛠️ |
 | :--- | :--- | :--- | :--- | :--- |
 | **[MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)** | [![GitHub stars](https://img.shields.io/github/stars/MobSF/Mobile-Security-Framework-MobSF?style=social&color=white)](https://github.com/MobSF/Mobile-Security-Framework-MobSF/stargazers) | Automated AppSec & Malware Analysis | Android / iOS / Windows | Automated, all-in-one mobile application pen-testing, malware analysis, and security assessment framework performing static and dynamic binary analysis. |
 | **[MVT (Mobile Verification Toolkit)](https://github.com/mvt-project/mvt)** | [![GitHub stars](https://img.shields.io/github/stars/mvt-project/mvt?style=social&color=white)](https://github.com/mvt-project/mvt/stargazers) | Digital Forensics & Spyware Detection | iOS / Android | Forensics toolkit developed by Amnesty International to identify traces of sophisticated mercenary spyware compromises (e.g., Pegasus, Predator). |
@@ -67,11 +88,11 @@ Open-source tooling in mobile security excels at forensic analysis, static/dynam
 
 ---
 
-## Enterprise vs Open-Source Comparison
+## ⚖️ Enterprise vs Open-Source Comparison
 
 When architecting a mobile defense strategy, understand the fundamental trade-offs between commercial enterprise MTD and open-source projects:
 
-| Architectural Requirement | Enterprise MTD (Zimperium, Lookout, Defender) | Open-Source Security (Hypatia, ShieldApp, MVT) |
+| Architectural Requirement 📐 | Enterprise MTD (Zimperium, Lookout, Defender) 🏢 | Open-Source Security (Hypatia, ShieldApp, MVT) 🔓 |
 | :--- | :--- | :--- |
 | **MDM / UEM Integration** | Native API connectors (Microsoft Intune, VMware Workspace ONE, Jamf Pro) | None; standalone apps without centralized mobile device management enrollment |
 | **Conditional Access Gating** | Real-time risk posture signals block compromised devices from corporate SaaS (Exchange, Slack, Salesforce) | Manual remediation required; cannot enforce network access restrictions automatically |
@@ -81,7 +102,27 @@ When architecting a mobile defense strategy, understand the fundamental trade-of
 
 ---
 
-## How to Contribute
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/sv?repos=ishandutta2007/Awesome-Mobile-Threat-Defense-MTD&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Mobile-Threat-Defense-MTD&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for visiting and supporting the **Awesome Mobile Threat Defense (MTD)** project! ✨
+
+If you find this curated ecosystem list helpful for your enterprise mobile architecture, security research, or personal device hardening:
+* ⭐ **Star this repository** to help others discover it!
+* 🍴 **Fork the project** and contribute additions or updates.
+* 📢 **Share it** with fellow cybersecurity architects, SecOps engineers, and mobile developers.
+* ☕ **Buy a coffee & sponsor**: Consider supporting ongoing maintenance directly via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps this project comprehensive, up-to-date, and community-driven! 🙏
+
+---
+
+## 🤝 How to Contribute
 
 1. Fork this repository.
 2. Add or update entries in `README.md` maintaining table formatting, pricing transparency, and accurate star counters.
@@ -90,7 +131,7 @@ When architecting a mobile defense strategy, understand the fundamental trade-of
 
 ---
 
-## License & Disclaimer
+## 📜 License & Disclaimer
 
 - Community curated — not an endorsement of any commercial platform.
 - Always review licensing terms before integrating into commercial products (e.g., GPL-3.0 vs. Apache-2.0 vs. MIT).
